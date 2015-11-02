@@ -1,5 +1,16 @@
 {
 	"name": "object-validator",
 	"version": "0.0.0",
-	"author": "Ernesto Islas"
+	"author": {
+		"name": "Ernesto Islas",
+		"complete-name": "Carlos Ernesto Islas García",
+		"e-mail": "isc.ernesto.islas@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ErnestoIslas/object-validator.git"
+	},
+	"scripts": {
+		"start": "node test/entrypoint.js"
+	}
 }
