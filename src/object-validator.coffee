@@ -4,4 +4,4 @@
 ###
 
 validator = () -> undefined
-module.export = new validator
+module.exports = new validator
