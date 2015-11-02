@@ -12,6 +12,6 @@
     return void 0;
   };
 
-  module["export"] = new validator;
+  module.exports = new validator;
 
 }).call(this);
