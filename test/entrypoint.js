@@ -1,4 +1,5 @@
 /**
  * http://usejsdoc.org/
  */
-console.log('object-validator');
+var Validator = require('../object-validator.js');
+Validator.validate();
