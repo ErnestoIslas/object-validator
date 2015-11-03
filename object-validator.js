@@ -6,12 +6,37 @@
  */
 
 (function() {
-  var validator;
+  var Validator, _;
 
-  validator = function() {
-    return void 0;
+  _ = require('underscore');
+
+  _.extend(_, {
+    isDefined: function(object) {
+      return !_.isUndefined(object);
+    }
+  });
+
+  Validator = {
+    validate: function(rules, object, callback) {
+      return console.log(_.isDefined(rules));
+    },
+    toString: function() {
+      return ['Object Validator version ', this.version, 'by', this.author].join(' ');
+    }
   };
 
-  module.exports = new validator;
+  Object.defineProperty(Validator, 'author', {
+    get: function() {
+      return 'Ernesto Islas <isc.ernesto.islas@gmail.com>';
+    }
+  });
+
+  Object.defineProperty(Validator, 'version', {
+    get: function() {
+      return '0.0.0';
+    }
+  });
+
+  module.exports = Validator;
 
 }).call(this);
